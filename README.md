@@ -19,8 +19,21 @@ Implementation of two ROS 2 nodes for data stream creation, processing, and real
 
 ### How to Build & Run
 
-1. **Clone the repository content into your workspace source directory:**
+1. **Setup workspace and build:**
    ```bash
    mkdir -p ~/kthfsdv/src
    cp -r exercise1/* ~/kthfsdv/src/
    cd ~/kthfsdv
+   colcon build --symlink-install
+   source install/setup.bash
+
+2. **Run Node A (Publisher):**
+ros2 run package1 nodeA
+
+3. **Run Node B (Subscriber/Divider):**
+ros2 run package2 nodeB
+
+4. **Data Visualization:**
+ros2 run plotjuggler plotjuggler
+
+
