@@ -31,6 +31,35 @@ Implementation of two ROS 2 nodes for data stream creation, processing, and real
 ros2 run package1 nodeA
 
 3. **Run Node B (Subscriber/Divider):**
+
+# Exercise 2 - Real-time Data Visualisation Tool
+
+A standalone GUI application built with PyQt5 and PyQtGraph to compute and visualize mathematical function trajectories in real-time.
+
+---
+
+## Function Definition
+
+The application continuously evaluates and renders the continuous time function:
+
+$$h(t) = 3\pi \cdot \exp(-5\sin(2\pi t))$$
+
+---
+
+## Features
+
+- **Real-Time Plotting**: Dynamic rendering of $h(t)$ time-series data with configurable refresh intervals.
+- **Interactive Controls**: Pause, resume, dynamic grid toggle, and full pan/zoom capabilities.
+- **Data Export**: Support for exporting generated trajectory points $(t, h(t))$ into CSV format.
+
+---
+
+## Dependencies
+
+Ensure the following packages are installed in your Python environment:
+
+```bash
+pip install PyQt5 pyqtgraph numpy
 ros2 run package2 nodeB
 
 4. **Data Visualization:**
